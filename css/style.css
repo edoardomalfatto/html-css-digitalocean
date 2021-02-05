@@ -11,6 +11,33 @@
   height: 10vh;
 }
 
+.my_jumbotron {
+
+  background-color: blue;
+}
+
+.my_jumbotron .container .row .col-md-8,
+.my_jumbotron .container .row .col-md-4,
+.my_jumbotron .container .row .col-md-5{
+  height: 50vh;
+}
+
+.bottom_header {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.bottom_header .container .row .col-md-12,
+.bottom_header .container .row .col-md-4,
+.bottom_header .container .row .col-md-5{
+  height: 30vh;
+  border: 1px solid black;
+}
+
+.bottom_header .container .row .col-md-12 .row .col-sm-2 {
+  height: 30vh;
+  border: 1px solid black;
+}
 
 /* utilities */
 

@@ -1,0 +1,28 @@
+/* DEbug da cancellare */
+
+ header .header_top {
+  height: 10vh;
+
+}
+
+.header_top .container .row .col-md-3,
+.header_top .container .row .col-md-4,
+.header_top .container .row .col-md-5 {
+  height: 10vh;
+}
+
+
+/* utilities */
+
+.bkg_blu {
+  background-color: blue;
+}
+.bkg_yellow {
+  background-color: yellow;
+}
+.bkg_green {
+  background-color: green;
+}
+.bkg_red {
+  background-color: red;
+}

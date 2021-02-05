@@ -39,7 +39,19 @@
   border: 1px solid black;
 }
 
+.row .col-md-6{
+  height: 10vh;
+  background-color: blue;
+
+}
+
+
 /* utilities */
+.wrapper_lg{
+  width: 90%;
+  margin: 0 auto;
+}
+
 
 .bkg_blu {
   background-color: blue;

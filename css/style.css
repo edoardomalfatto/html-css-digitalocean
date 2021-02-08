@@ -269,6 +269,11 @@ h2 {
   background-color: rgb(37,134,253);
 }
 
+/* business */
+
+.business_txt p {
+  margin-bottom:4px;
+}
 
 /* MEDIA QUERY */
 

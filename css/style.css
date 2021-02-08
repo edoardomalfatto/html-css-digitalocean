@@ -96,12 +96,18 @@ h2 {
 .bkg_whiteblue {
   background-color:rgb(243,245,249);
 }
+.bkg_gradientblue {
+  background-image: linear-gradient(rgb(0,30,154) , rgb(0,71,197));
+}
 
 .color_grey {
   color: grey;
 }
 .color_strangegrey {
   color: rgb(92,106,136);
+}
+.color_strangegrey_2 {
+  color: rgb(187,200,234);
 }
 .color_white {
   color:white;
@@ -112,12 +118,18 @@ h2 {
 .color_darkblue {
   color:rgb(3,28,78);
 }
+.color_greenwater {
+  color:rgb(0,213,209);
+}
 
 .font_little {
   font-size: 0.6em;
 }
 .uppercase {
   text-transform: uppercase;
+}
+.bolder {
+  font-weight: bolder;
 }
 .allign_middle {
   vertical-align: middle;
@@ -274,6 +286,33 @@ h2 {
 .business_txt p {
   margin-bottom:4px;
 }
+
+.row_service p {
+  margin-bottom: 0;
+}
+.row_service a {
+  text-decoration: none;
+}
+
+.row_service {
+  border-top:1px solid white;
+  border-bottom: 1px solid white;
+  padding:10px 0;
+}
+
+.first_border {
+  border-top: none;
+}
+
+.last_border {
+  border-bottom: none;
+}
+
+.horiziontal_padding {
+  padding:0 30px;
+}
+
+
 
 /* MEDIA QUERY */
 

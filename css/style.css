@@ -1,3 +1,14 @@
+body {
+  font-size: 14px;
+}
+h1 {
+  font-size: 4.5em;
+}
+p.special_p {
+  font-size:1.4em;
+}
+
+
 /* DEbug da cancellare */
 
  header .header_top {
@@ -19,7 +30,7 @@
 .my_jumbotron .container .row .col-md-8,
 .my_jumbotron .container .row .col-md-4,
 .my_jumbotron .container .row .col-md-5{
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 .bottom_header {
@@ -45,14 +56,7 @@
 
 }
 
-
-/* utilities */
-.wrapper_lg{
-  width: 90%;
-  margin: 0 auto;
-}
-
-
+/* utilities debug*/
 .bkg_blu {
   background-color: blue;
 }
@@ -64,4 +68,114 @@
 }
 .bkg_red {
   background-color: red;
+}
+
+/* utilities */
+.wrapper_lg{
+  width: 90%;
+  margin: 0 auto;
+}
+.wrapper_xs{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.disp_inl {
+  display: inline;
+}
+
+.bkg_white {
+  background-color:white;
+}
+.bkg_lightblue {
+  background-color:rgb(37,134,253);
+}
+
+.color_grey {
+  color: grey;
+}
+.color_white {
+  color:white;
+}
+.color_lightblue {
+  color:rgb(37,134,253);
+}
+.color_darkblue {
+  color:rgb(3,28,78);
+}
+
+.border_radius {
+  border-radius: 5px;
+}
+
+.down_arrow::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: middle;
+  font-weight: 980;
+}
+
+/* header_top */
+
+.header_lh {
+  line-height: 10vh;
+}
+
+.logo img {
+  width:50%;
+}
+
+
+.fa-bars#hamburger {
+  font-size: 50px;
+}
+
+.btn_header {
+  border: 1px solid rgb(37,134,253);
+}
+.btn_header:hover {
+  color:rgb(37,134,253);
+}
+
+/* jumbotron */
+
+.my_jumbotron {
+  background-image: url("../img/jumbo_bkg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbo_padding {
+  padding:40px;
+}
+
+.google_form {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+.google_form h2 {
+  margin-top: 0;
+}
+.google_btn {
+  width:100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+.google_btn img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* MEDIA QUERY */
+
+/* media query solo dimensione tablet */
+@media screen and (max-width: 990px) and (min-width: 768px) {
+  .col-md-5.jumbo_padding {
+    padding-top: 90px;
+  }
 }

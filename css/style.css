@@ -142,9 +142,25 @@ h2 {
   font-size: 0.9em;
   padding-left:10px;
   font-weight: 600;
-
 }
-
+.left_angle::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f104";
+  display: inline-block;
+  font-size: 2.5em;
+  padding-right:10px;
+  font-weight: 600;
+  color:rgb(3,28,78);
+}
+.right_angle::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  display: inline-block;
+  font-size: 2.5em;
+  padding-left:10px;
+  font-weight: 600;
+  color:rgb(3,28,78);
+}
 /* header_top */
 
 .header_lh {
@@ -230,6 +246,29 @@ h2 {
   font-size: 0.7em;
 }
 
+/* developers */
+
+.developers_img img {
+  width:50%;
+}
+
+.developers_text_2 p {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.pallini a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border:1px solid rgb(37,134,253);
+  border-radius: 50%;
+}
+
+.pallini a:hover {
+  background-color: rgb(37,134,253);
+}
+
 
 /* MEDIA QUERY */
 
@@ -240,8 +279,15 @@ h2 {
   }
 }
 
+/* media query dimensione solo telefono */
 @media screen and (max-width: 767px) {
   .col-md-3.no_padding {
     padding-left: 0px;
+  }
+  .left_angle::before{
+    display: none;
+  }
+  .right_angle::after{
+    display: none;
   }
 }

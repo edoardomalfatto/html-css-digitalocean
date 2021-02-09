@@ -81,6 +81,13 @@ h2 {
 }
 
 /* utilities */
+.padding_top_standard {
+  padding-top: 20px;
+}
+.padding_bottom_standard {
+  padding-bottom: 20px;
+}
+
 .wrapper_lg{
   width: 90%;
   margin: 0 auto;
@@ -207,7 +214,7 @@ h2 {
 
 
 .fa-bars#hamburger {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .list-inline.header_lh li a:hover {
@@ -341,17 +348,40 @@ h2 {
 
 /* development */
 
+.rocker_padding {
+  padding:20px 0;
+}
 
 .rockerbox {
-  width: 50%;
+  width: 60%;
   margin:0 auto;
-  background-color: white;
 }
+
+.rockerbox.text_center {
+  min-height: 200px;
+}
+
+.arrow_container{
+  min-height: 200px;
+  transform: translateY(32%)
+}
+
+.arrow_container .fas {
+  display: inline-block;
+  font-size: 2.5em;
+  padding-right:0;
+  font-weight: 600;
+  color:rgb(3,28,78);
+}
+
 
 .rockerbox_logo img {
   width: 40%;
 }
 
+.rockerbox_text {
+  padding-top: 10px;
+}
 .rockerbox_text h3 {
   margin-top:0;
   margin-bottom: 0;
@@ -399,6 +429,9 @@ h2 {
   .col-md-5.jumbo_padding {
     padding-top: 90px;
   }
+  .logo img {
+    width: 30%;
+  }
 }
 
 /* media query dimensione solo telefono */
@@ -406,17 +439,32 @@ h2 {
   .col-md-3.no_padding {
     padding-left: 0px;
   }
+  .col-md-4.no_padding {
+    padding-left: 0px;
+  }
+
   .left_angle::before{
     display: none;
   }
   .right_angle::after{
     display: none;
   }
+
   .header_top {
     position: fixed;
     top: 0;
     left: 0;
     transform: none;
     z-index: 500;
+  }
+
+  .logo img {
+    width: 30%;
+  }
+  .deploy_txt h3 {
+    font-size: 0.9em;
+}
+  .font_little {
+    font-size: 0.8em;
   }
 }

@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -13,34 +16,37 @@
 
     <header>
       <!-- INIZIO HEADER TOP -->
-      <div class="header_top">
+      <div class="header_top bkg_white">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
               <div class="logo header_lh disp_inl">
                 <img src="img/logo.png" alt="Ocean_Logo">
                 </div>
-              <i id="hamburger" class="fas fa-bars visible-xs visible-sm pull-right header_lh color_greenwater"></i>
+              <i id="hamburger" class="fas fa-bars hidden-md hidden-lg pull-right header_lh color_lightblue"></i>
             </div>
-            <div class="col-md-5 hidden-xs hidden-sm">
-              <nav>
-                <ul class="list-inline header_lh color_darkblue">
-                  <li class="down_arrow">Product</li>
-                  <li>Constmers</li>
-                  <li class="down_arrow">Community</li>
-                  <li>Pricing</li>
-                </ul>
-              </nav>
-            </div>
-            <div class="col-md-4 hidden-xs hidden-sm">
-              <nav>
-                <ul class="list-inline header_lh pull-right color_darkblue">
-                  <li>Docs</li>
-                  <li class="down_arrow">Support</li>
-                  <li>Login</li>
-                  <a class="btn btn_header color_greenwater" href="#" role="button">Sign In</a>
-                </ul>
-              </nav>
+            <div class="visible-md-block visible-lg-block">
+              <div class="col-md-5">
+                <nav>
+                  <ul class="list-inline header_lh color_darkblue">
+                    <li class="down_arrow"><a class="color_darkblue dec_none" href="#">Product</a> </li>
+                    <li><a class="color_darkblue dec_none" href="#">Constmers</a> </li>
+                    <li class="down_arrow"><a class="color_darkblue dec_none" href="#">Community</a></li>
+                    <li> <a class="color_darkblue dec_none" href="#">Pricing</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-md-4">
+                <nav>
+                  <ul class="list-inline header_lh pull-right color_darkblue">
+                    <li><a class="color_darkblue dec_none" href="#">Docs</a></li>
+                    <li class="down_arrow"><a class="color_darkblue dec_none" href="#">Support</a></li>
+                    <li><a class="color_darkblue dec_none" href="#">Login</a></li>
+                    <a class="btn btn_header color_lightblue" href="#" role="button">Sign In</a>
+                  </ul>
+                </nav>
+              </div>
+
             </div>
           </div>
         </div>
@@ -431,10 +437,35 @@
         </div>
       </div>
 
-      <div class="development">
+      <div class="development bkg_whiteblue">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+              <div class="development_text">
+                <h2 class="color_darkblue">Development teams love DigitalOcean</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+              <div class="rockerbox left_angle right_angle text-center">
+                <div class="rockerbox_logo">
+                  <img src="img/rockerbox.png" alt="rockerbox_logo">
+                </div>
+                <div class="rockerbox_text">
+                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                  <h3 class="font_little color_darkblue">Rick Ofore</h3>
+                  <p class="font_little color_darkblue">Co-founder and CTO</p>
+                  <a class="font_little left_arrow color_lightblue" href="#">Read Story</a>
+
+                </div>
+              </div>
+              <div class="pallini">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
             </div>
           </div>
         </div>
@@ -446,11 +477,16 @@
 
     <!-- INIZIO FOOTER -->
     <footer>
-      <div class="footer_top">
+      <div class="footer_top bkg_gradientblue">
         <div class="wrapper_xs">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="footer_top_contain text-center">
+                  <h2 class="color_white">Get Started now.</h2>
+                  <a class="btn btn_header bkg_white color_lightblue" href="#" role="button">Create Your Account</a>
+
+                </div>
               </div>
             </div>
           </div>

@@ -1,6 +1,13 @@
 body {
   font-size: 14px;
 }
+h1,h2,h3,h4 {
+  font-family: 'Inter', sans-serif;
+}
+p,span {
+  font-family: 'Roboto', sans-serif;
+}
+
 h1 {
   font-size: 4.5em;
 }
@@ -15,14 +22,14 @@ h2 {
 /* DEbug da cancellare */
 
  header .header_top {
-  height: 10vh;
+  height: 80px;
 
 }
 
 .header_top .container .row .col-md-3,
 .header_top .container .row .col-md-4,
 .header_top .container .row .col-md-5 {
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 .my_jumbotron {
@@ -125,6 +132,11 @@ h2 {
 .font_little {
   font-size: 0.6em;
 }
+
+.dec_none {
+  text-decoration: none;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -174,9 +186,16 @@ h2 {
   color:rgb(3,28,78);
 }
 /* header_top */
+.header_top {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+}
 
 .header_lh {
-  line-height: 10vh;
+  line-height: 80px;
 }
 
 .logo img {
@@ -186,6 +205,10 @@ h2 {
 
 .fa-bars#hamburger {
   font-size: 50px;
+}
+
+.list-inline.header_lh li a:hover {
+  text-decoration: none;
 }
 
 .btn_header {
@@ -202,6 +225,7 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 80px;
 }
 
 .jumbo_padding {
@@ -312,6 +336,23 @@ h2 {
   padding:0 30px;
 }
 
+/* development */
+
+
+.rockerbox {
+  width: 50%;
+  margin:0 auto;
+  background-color: white;
+}
+
+.rockerbox_logo img {
+  width: 40%;
+}
+
+.rockerbox_text h3 {
+  margin-top:0;
+  margin-bottom: 0;
+}
 
 
 /* MEDIA QUERY */
@@ -324,7 +365,7 @@ h2 {
 }
 
 /* media query dimensione solo telefono */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .col-md-3.no_padding {
     padding-left: 0px;
   }
@@ -333,5 +374,12 @@ h2 {
   }
   .right_angle::after{
     display: none;
+  }
+  .header_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
+    z-index: 500;
   }
 }

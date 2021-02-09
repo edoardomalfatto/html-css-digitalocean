@@ -106,6 +106,9 @@ h2 {
 .bkg_gradientblue {
   background-image: linear-gradient(rgb(0,30,154) , rgb(0,71,197));
 }
+.bkg_darkblue {
+  background-color:rgb(3,28,78);
+}
 
 .color_grey {
   color: grey;
@@ -189,8 +192,8 @@ h2 {
 .header_top {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  width: 100%;
   z-index: 500;
 }
 
@@ -352,6 +355,40 @@ h2 {
 .rockerbox_text h3 {
   margin-top:0;
   margin-bottom: 0;
+}
+
+/* footer bottom */
+
+.little_logo img {
+  width: 10%;
+}
+
+.little_text h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.social_icon .list-inline li .fab {
+  color: rgb(92,106,136);
+}
+
+.footer_list ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer_list ul li a {
+  color:rgb(166,173,189);
+  text-transform: capitalize;
+}
+.footer_list ul li a:hover {
+  text-decoration: none;
+}
+.footer_list ul li p {
+  color:white;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  text-transform: capitalize;
 }
 
 

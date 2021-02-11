@@ -87,6 +87,9 @@ h2 {
 .padding_bottom_standard {
   padding-bottom: 20px;
 }
+.padding_bottom_xl {
+  padding-bottom: 40px;
+}
 
 .wrapper_lg{
   width: 90%;
@@ -235,12 +238,13 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 
 .jumbo_padding {
   padding:40px;
 }
+
 
 .google_form {
   height: 100%;
@@ -431,6 +435,9 @@ h2 {
   }
   .logo img {
     width: 30%;
+  }
+  h1 {
+    font-size: 4em;
   }
 }
 
